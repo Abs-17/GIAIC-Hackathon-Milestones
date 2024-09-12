@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #750bf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: rgb(188, 171, 220);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #form_group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  #form_group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  #form_group input,
+  #form_group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #7706d9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color:#6a06e4
+  }
+  
+  .resume_output {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  #resumeContent {
+    margin-top: 20px;
+  }
+  
+  #resume_field {
+    margin-bottom: 15px;
+  }
+  
+  #resume_field span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .resume_output[contenteditable="true"] {
+    border: 1px dashed #bbb;
+    padding: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    #resume_field {
+      margin-bottom: 10px;
+    }
+  }
+  
